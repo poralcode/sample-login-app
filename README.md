@@ -90,9 +90,9 @@ To get started with this project, follow these steps:
 ## Usage
 
 - Open the Electron application.
-- Enter the username and password in the login form.
-- Click the "Login" button.
+- Enter the username and password in the login form and submit it.
 - The application will send a POST request to the server, and you will receive a JSON response indicating the login status. Note that this was tested on my local machine running Apache server. You can implement the server side on your own by copying the PHP script above and changing the value of the `serverHost` on the file `renderer.js`.
+- You may open a devtools to see the JSON output in the console.
 - The expected username and password is `user`.
 
 ## Author
