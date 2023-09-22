@@ -1,0 +1,27 @@
+#titlebar{
+  background-color: #202123;
+  color: #FFFFFF;
+}
+#titlebar-draggable{
+  -webkit-app-region: drag;
+}
+#titlebar-title{
+  font-size: 0.9em;
+}
+#window-buttons a{
+  width: 45px;
+  height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+#window-buttons a:hover{
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+#btn-titlebar-close:hover{
+  background-color: red !important;
+}
+.btn-show-password{
+  min-width: 50px;
+}
