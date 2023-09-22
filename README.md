@@ -82,7 +82,10 @@ To get started with this project, follow these steps:
    npm install
    ```
 5. Open the project in your preferred code editor.
-6. Run the application using Electron.js to see the login form in action.
+6. Run the application to see the login form in action.
+```bash
+   npm start
+   ```
 
 ## Usage
 
