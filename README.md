@@ -1,6 +1,6 @@
 # Sample Login Form Project
 
-This is a sample login form project designed to showcase software development knowledge, particularly the use of frameworks like Node.js, Electron.js, Bootstrap, jQuery, and programming languages such as JavaScript and PHP, along with the use of FontAwesome for icons.
+This is a sample login form project designed to showcase my knowledge, particularly the use of frameworks like Node.js, Electron.js, Bootstrap, jQuery, and programming languages such as JavaScript and PHP, along with the use of FontAwesome for icons.
 
 ## Purpose
 
