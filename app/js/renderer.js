@@ -22,7 +22,7 @@ $(function () {
     $("#login-form-spinner").removeClass("visually-hidden");
     $("#error-message, #success-message").addClass("visually-hidden"); // Hide error and success messages
 
-    // Delay the AJAX request to provide visual feedback
+    // Handle the AJAX request.
     $.ajax({
       url: serverHost,
       type: "POST",
