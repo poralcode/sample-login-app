@@ -91,8 +91,20 @@ To get started with this project, follow these steps:
 - Open the Electron application.
 - Enter the username and password in the login form and submit it.
 - The application will send a POST request to the server, and you will receive a JSON response indicating the login status. Note that this was tested on my local machine running Apache server. You can implement the server side on your own by copying the PHP script above and changing the value of the `serverHost` on the file `renderer.js`.
-- You may open a devtools to see the JSON output in the console.
+- You may open a devtools by pressing `F12` on your keyboard to see the JSON output in the console.
 - The expected username and password is `user`.
+
+## Sample Output
+
+[Output 1 - Form](https://github.com/poralcode/sample-login-app/blob/main/sample_output/Output%201%20-%20Form.png)
+
+[Output 2 - Required Field](https://github.com/poralcode/sample-login-app/blob/main/sample_output/Output%202%20-%20Required%20Field.png)
+
+[Output 3 - Invalid Credentials](https://github.com/poralcode/sample-login-app/blob/main/sample_output/Output%203%20-%20Invalid%20Credentials.png)
+
+[Output 4 - Correct Credentials](https://github.com/poralcode/sample-login-app/blob/main/sample_output/Output%204%20-%20Correct%20Credentials.png)
+
+[Output 5 - Expected Response](https://github.com/poralcode/sample-login-app/blob/main/sample_output/Output%205%20-%20Expected%20Response.png)
 
 ## Author
 
