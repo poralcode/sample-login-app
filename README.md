@@ -28,35 +28,37 @@ This project utilizes the following technologies:
 The server-side PHP script is implemented using a simple conditional statement to handle POST requests. Here's an overview of the server-side code:
 
 ```php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    switch ($_POST["message"]) {
-        case "request-login":
-            $username = $_POST['username'];
-            $password = $_POST['password'];
+<?php
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        switch ($_POST["message"]) {
+            case "request-login":
+                $username = $_POST['username'];
+                $password = $_POST['password'];
 
-            $response = [
-                "message" => "invalid-credential",
-                "userID" => 0,
-                "username" => $username,
-                "fullname" => null
-            ];
+                $response = [
+                    "message" => "invalid-credential",
+                    "userID" => 0,
+                    "username" => $username,
+                    "fullname" => null
+                ];
 
-            if ($username === "user" && $password === "user") {
-                $response['userID'] = 1;
-                $response['message'] = "login-success";
-                $response['fullname'] = "John Wick";
-            }
+                if ($username === "user" && $password === "user") {
+                    $response['userID'] = 1;
+                    $response['message'] = "login-success";
+                    $response['fullname'] = "John Wick";
+                }
 
-            header('Content-Type: application/json');
-            die(json_encode($response));
-            break;
-        default:
-            die("Invalid request.");
-            break;
+                header('Content-Type: application/json');
+                die(json_encode($response));
+                break;
+            default:
+                die("Invalid request.");
+                break;
+        }
+    } else {
+        die("Invalid request method.");
     }
-} else {
-    die("Invalid request method.");
-}
+?>
 ```
 
 The server script listens for POST requests, processes the login request, and returns a JSON response based on the provided credentials.
