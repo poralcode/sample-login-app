@@ -59,3 +59,8 @@ ipcMain.on("maximize-window", () => {
 ipcMain.on("close-window", () => {
   mainWindow.close(); // Close the main window
 });
+
+// Event listener for toggling DevTools using IPC
+ipcMain.on("toggle-devtools", () => {
+  mainWindow.webContents.toggleDevTools();
+});

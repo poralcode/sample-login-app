@@ -30,3 +30,10 @@ window.addEventListener("DOMContentLoaded", () => {
     btnMaximize.innerHTML = `<i class="fa-regular fa-window-restore"></i>`; // Update the icon of the button maximized.
   });
 });
+
+// Event listener for F12 key press to show DevTools
+window.addEventListener("keydown", (event) => {
+  if (event.key === "F12") {
+    ipcRenderer.send("toggle-devtools");
+  }
+});
