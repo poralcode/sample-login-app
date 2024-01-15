@@ -1,17 +1,13 @@
 # Sample Login Form Project
 
-This is a sample login form project designed to showcase my knowledge, particularly the use of frameworks like Node.js, Electron.js, Bootstrap, jQuery, and programming languages such as JavaScript and PHP, along with the use of FontAwesome for icons.
-
-## Purpose
-
 The main purpose of this project is to demonstrate the implementation of a simple login form. When a user submits their login credentials, the form sends a POST request to a server. The server processes the request and responds with a JSON object containing information about the login status and user details. The expected JSON response format is as follows:
 
 ```json
 {
-    "message": "login-success",
-    "userID": 1,
-    "username": "user",
-    "fullname": "John Wick"
+  "message": "login-success",
+  "userID": 1,
+  "username": "user",
+  "fullname": "John Wick"
 }
 ```
 
@@ -70,22 +66,23 @@ The server script listens for POST requests, processes the login request, and re
 To get started with this project, follow these steps:
 
 1. Clone or download this repository to your local machine.
-     ```bash
+   ```bash
    git clone https://github.com/poralcode/sample-login-app.git
    ```
 2. Navigate to the project directory:
-    ```bash
+   ```bash
    cd sample-login-app
    ```
 3. Ensure you have Node.js and PHP. (You can install the project dependencies):
    ```bash
    npm install
    ```
-5. Open the project in your preferred code editor.
-6. Run the application to see the login form in action.
+4. Open the project in your preferred code editor.
+5. Run the application to see the login form in action.
+
 ```bash
    npm start
-   ```
+```
 
 ## Usage
 
